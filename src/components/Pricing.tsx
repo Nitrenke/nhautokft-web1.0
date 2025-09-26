@@ -95,7 +95,7 @@ const Pricing: React.FC = () => {
                 <p className="text-lg font-normal">
                   *Letölthető meghatalmazások:
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <div className="flex flex-col sm:flex-row gap-8 justify-center">
                   <a
                     href="/meghati_magan_vizsga.doc"
                     download="meghatalmazas_magan_vizsga.doc"
