@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from '@/components/ui/button';
 
 interface PriceItemProps {
   price: string;
@@ -96,20 +97,22 @@ const Pricing: React.FC = () => {
                   *Letölthető meghatalmazások:
                 </p>
                 <div className="flex flex-col sm:flex-row gap-8 justify-center">
-                  <a
-                    href="/meghati_magan_vizsga.doc"
-                    download="meghatalmazas_magan_vizsga.doc"
-                    className="text-lg font-normal underline hover:no-underline hover:text-[rgba(168,255,53,1)] hover:scale-125 transition-all duration-500 ease-in-out cursor-pointer"
-                  >
-                    Magán vizsga meghatalmazás
-                  </a>
-                  <a
-                    href="/megh_jogi_szem.doc"
-                    download="meghatalmazas_jogi_szemely.doc"
-                    className="text-lg font-normal underline hover:no-underline hover:text-[rgba(168,255,53,1)] hover:scale-125 transition-all duration-500 ease-in-out cursor-pointer"
-                  >
-                    Jogi személy meghatalmazás
-                  </a>
+                  <Button asChild variant="outline" size="lg" className="bg-white/10 border-white/30 text-white hover:bg-white/20 hover:text-white hover:scale-105 transition-all duration-300">
+                    <a
+                      href="/meghati_magan_vizsga.doc"
+                      download="meghatalmazas_magan_vizsga.doc"
+                    >
+                      Magán vizsga meghatalmazás
+                    </a>
+                  </Button>
+                  <Button asChild variant="outline" size="lg" className="bg-white/10 border-white/30 text-white hover:bg-white/20 hover:text-white hover:scale-105 transition-all duration-300">
+                    <a
+                      href="/megh_jogi_szem.doc"
+                      download="meghatalmazas_jogi_szemely.doc"
+                    >
+                      Jogi személy meghatalmazás
+                    </a>
+                  </Button>
                 </div>
               </div>
             </footer>
