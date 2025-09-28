@@ -2,6 +2,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/nhautohu/public_html/
-    - /bin/npm install --legacy-peer-deps
-    - /bin/npm run build
-    - /bin/rsync -a dist/ $DEPLOYPATH
+    - /bin/rsync -a * $DEPLOYPATH
+
